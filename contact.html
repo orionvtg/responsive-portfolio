@@ -3,10 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap cdn link and css stylesheet link. -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel = "stylesheet"
+   type = "text/css"
+   href = "styles.css" />
   <title>Document</title>
 </head>
 
+<body>
+  
 <!-- navbar content -->
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -30,7 +36,44 @@
   </div>
 </nav>
 
-<body>
+<!-- Container grid set up.-->
+
+  <div class="container push_right">
+    <div class="row">
+      <div class="col-md-7">
+        <div class="card">
+          <div class="card-body">
+           <!-- Contact form -->
+            
+           <form>
+    
+             <div class="form-group">
+               <label for="exampleFormControlInput1">Name</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Name">
+             </div>
+
+             <div class="form-group">
+              <label for="exampleFormControlInput1">Email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email">
+            </div>
+
+  
+            <div class="form-group">
+             <label for="exampleFormControlTextarea1">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+           </div>
+          </form>
+
+<!-- non working submission button -->
+
+          <button type="button" class="btn btn-danger">submit</button> 
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
   
 </body>
 </html>
